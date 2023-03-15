@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Devcrew Team
+ * @copyright Copyright (c) 2023 Devcrew {https://devcrew.io}
+ * Date: 25/01/2023
+ * Time: 2:14 PM
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Devcrew_SocialLogin">
+        <sequence>
+            <module name="Magento_Customer"/>
+            <module name="Magento_Store"/>
+        </sequence>
+    </module>
+</config>

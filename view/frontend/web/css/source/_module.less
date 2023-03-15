@@ -1,0 +1,96 @@
+/**
+ * @author Devcrew Team
+ * @copyright Copyright (c) 2023 Devcrew {https://devcrew.io}
+ * Date: 23/02/2023
+ * Time: 11:51 AM
+ */
+
+//
+//  Variables
+//  _____________________________________________
+
+@social-color-white: #fff;
+@social-facebook-color: #3b5998;
+@social-facebook-hover-color: #23345a;
+@social-google-color: #dd4b39;
+@social-google-hover-color: #a32b1c;
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .devcrew-social-login-buttons {
+        margin-bottom: 15px;
+
+        .social-login-buttons {
+            width: 200px;
+            display: inline-block;
+
+            .devcrew-social-btn {
+                display: block;
+                text-decoration: none;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.42857143;
+                vertical-align: middle;
+                touch-action: manipulation;
+                cursor: pointer;
+                user-select: none;
+                background-image: none;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                padding: 6px;
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+            }
+
+            .btn-socialfacebook {
+                color: @social-color-white;
+                background-color: @social-facebook-color;
+                border-color: rgba(0, 0, 0, 0.2);
+            }
+
+            .btn-socialfacebook:hover {
+                background-color: @social-facebook-hover-color;
+            }
+
+            .btn-socialgoogle {
+                color: @social-color-white;
+                background-color: @social-google-color;
+                border-color: rgba(0, 0, 0, 0.2);
+            }
+
+            .btn-socialgoogle:hover {
+                background-color: @social-google-hover-color;
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .devcrew-social-login-buttons {
+        .social-login-buttons {
+            width: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .devcrew-social-login-buttons {
+        .social-login-buttons:not(:first-child) {
+            margin-left: 5px;
+        }
+    }
+}

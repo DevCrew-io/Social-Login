@@ -1,0 +1,16 @@
+{
+    "devcrew_social_customer": {
+        "column": {
+            "social_login_id": true,
+            "social_id": true,
+            "customer_id": true,
+            "type": true,
+            "website_id": true,
+            "creation_at": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "DEVCREW_SOCIAL_CUSTOMER_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID": true
+        }
+    }
+}

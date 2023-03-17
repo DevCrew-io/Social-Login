@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Devcrew Team
+ * @copyright Copyright (c) 2023 Devcrew {https://devcrew.io}
+ * Date: 25/01/2023
+ * Time: 2:25 PM
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <devcrew_social_login>
+            <general>
+                <enabled>0</enabled>
+            </general>
+        </devcrew_social_login>
+    </default>
+</config>

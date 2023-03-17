@@ -1,0 +1,38 @@
+<?php
+/**
+ * @author Devcrew Team
+ * @copyright Copyright (c) 2023 Devcrew {https://devcrew.io}
+ * Date: 21/02/2023
+ * Time: 5:11 PM
+ */
+
+use Devcrew\SocialLogin\Block\SocialLogin\Login;
+
+/** @var Login $block */
+
+$block->unSetSession();
+$enableSocialTypes = $block->getEnabledSocialTypes();
+if ($block->canShowButton() && count($enableSocialTypes)):
+    ?>
+    <div class="devcrew-social-login-buttons">
+        <?php foreach ($enableSocialTypes as $key => $social): ?>
+            <div class="social-login-buttons">
+                <a class="devcrew-social-btn btn-social<?= $block->escapeHtml($key); ?>"
+                   rel="nofollow"
+                   href="javascript:void(0);"
+                   data-role="devcrew-social-login"
+                   data-href="<?= $block->escapeUrl($social['login_url']) ?>">
+                    <span class="fa fa-<?= $block->escapeHtml($key); ?>"></span>
+                    <?= /** @noEscape */ __('Sign in with %1', $block->escapeHtml($social['label'])); ?>
+                </a>
+            </div>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "socialLogin": {}
+        }
+    }
+</script>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Devcrew Team
+ * @copyright Copyright (c) 2023 Devcrew {https://devcrew.io}
+ * Date: 26/01/2023
+ * Time: 12:55 PM
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Devcrew\SocialLogin\Block\SocialLogin\Login" name="devcrew-social-login-buttons" before="-"
+                   ifconfig="devcrew_social_login/general/enabled" template="Devcrew_SocialLogin::social/login.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,21 @@
+{
+    "name": "devcrew/module-social-login",
+    "description": "This extension is develop for quick login from different Social Networking apps to the Magento store without Magento registration process",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "~7.2.0|~7.3.0|~7.4.0|~8.0.0|~8.1.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Devcrew\\SocialLogin\\": ""
+        }
+    }
+}

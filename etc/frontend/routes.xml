@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Devcrew Team
+ * @copyright Copyright (c) 2023 Devcrew {https://devcrew.io}
+ * Date: 17/01/2023
+ * Time: 2:21 PM
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="devcrewsociallogin" frontName="devcrewsociallogin">
+            <module name="Devcrew_SocialLogin"/>
+        </route>
+    </router>
+</config>

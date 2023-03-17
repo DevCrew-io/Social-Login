@@ -84,5 +84,3 @@ When you click on the "Sign in with Facebook" or "Sign in with Google" button, a
 If you want to include any feature or found any bugs, you can contact us at below email address.
 
 ``hello@devcrew.io``
-
-``ismail@devcrew.io``
